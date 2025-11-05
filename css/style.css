@@ -1,8 +1,17 @@
 body {
-    /* background-color: lightpink; */
     background-image:url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     margin: 0;
     padding: 0;
+}
+
+p:hover{
+    transform:scale(1.30);
+    color:black;
+    
 }
 
 .maincontainer {
