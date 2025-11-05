@@ -1,0 +1,220 @@
+body {
+    background-color: lightpink;
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    max-width: 1200px;
+    margin: 5px auto;
+    padding-bottom: 100px;
+    background-color: lightgoldenrodyellow;
+    color: lightslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: ridge;
+    border-color: whitesmoke;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.maincontainer section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    margin: 2px;
+    column-gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontainer img:hover {
+    transform: scale(1.15);
+}
+
+.maincontainer img {
+    border-radius: 50%;
+    /* border-color: lightslategray;
+    border-style: solid; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.inter {
+    /* list-style: none; */
+    list-style-image: url('https://www.animatedimages.org/data/media/111/animated-arrow-image-0270.gif');
+    list-style-position: inside;
+}
+
+.listnav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    gap: 180px;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: small;
+    position: relative;
+    border-top: 2px solid whitesmoke;
+}
+
+a {
+    font-family: monospace;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: lightskyblue;
+}
+
+a:hover,
+a:active {
+    color: lightpink;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightpink;
+    background-color: whitesmoke;
+    color: lightblue;
+    font-family: monospace;
+    font-style: italic;
+}
+
+.buttonfake {
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: lightslategray;
+    border: 2px solid lightpink;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: monospace;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonfake:hover {
+    background-color: lightskyblue;
+    color: black;
+    transform: scale(1.05);
+}
+
+.cvbox {
+    border: 2px solid lightskyblue;
+    background-color: lightpink;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: monospace;
+    font-style: italic;
+    color: lightslategray;
+    width: 20%;
+    position: relative;
+    list-style-position: inside;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.cvbox:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width:1024px) {
+    .maincontainer section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .listnav {
+        gap: 100px;
+        font-size: x-large;
+    }
+
+    .cvbox {
+        width: 30%;
+    }
+
+    input[type=text] {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .maincontainer section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .listnav {
+        gap: 20px;
+        font-size: large;
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .footer {
+        height: auto;
+        font-size: smaller;
+        padding: 20px;
+    }
+
+    .cvbox {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    input[type=text] {
+        width: 70%;
+    }
+}
+
+@media(max-width:480px) {
+    .maincontainer section {
+        grid-template-columns: 1fr;
+    }
+
+    .maincontainer img {
+        width: 80%;
+    }
+
+    .listnav {
+        font-size: medium;
+    }
+
+    .cvbox {
+        width: 80%;
+        font-size: small;
+    }
+
+    input[type=text] {
+        width: 90%;
+    }
+
+    .buttonfake{
+        width:80%;
+        font-size:medium;
+    }
+}
