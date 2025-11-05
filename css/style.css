@@ -1,5 +1,6 @@
 body {
-    background-color: lightpink;
+    /* background-color: lightpink; */
+    background-image:url('../images/background.jpg');
     margin: 0;
     padding: 0;
 }
