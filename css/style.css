@@ -1,19 +1,34 @@
 body {
-    background-image:url('../images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     margin: 0;
     padding: 0;
 }
 
-p:hover{
-    transform:scale(1.20);
-    color:black;
-    font-weight: bold;
-    font-size: larger;
+.intro {
+    font-size: medium;
+    color: lightslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    /* transition: all 0.3s ease; */
+    max-width: 700px;
+    margin: 10px auto;
+    /* line-height: 1.6; */
 }
+
+
+.intro:hover {
+    transform: scale(1.05);
+    color: black;
+    font-weight: bold;
+    border: 2px solid lightslategray;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
 .maincontainer {
     max-width: 1200px;
@@ -92,11 +107,13 @@ a {
     text-decoration: none;
 }
 
-a:link,a:visited {
+a:link,
+a:visited {
     color: lightskyblue;
 }
 
-a:hover,a:active {
+a:hover,
+a:active {
     color: lightpink;
 }
 
@@ -198,6 +215,23 @@ input[type=text] {
     input[type=text] {
         width: 70%;
     }
+
+    .intro {
+        font-size: medium;
+        padding: 8px;
+    }
+
+    .intro:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 40%;
+    }
+
+    img:hover {
+        transform: scale(1.08);
+    }
 }
 
 @media(max-width:480px) {
@@ -222,8 +256,29 @@ input[type=text] {
         width: 90%;
     }
 
-    .buttonfake{
-        width:80%;
-        font-size:medium;
+    .buttonfake {
+        width: 80%;
+        font-size: medium;
+    }
+
+    .intro {
+        font-size: small;
+        text-align: left;
+        padding: 6px;
+    }
+
+    .intro:hover {
+        transform: none;
+        background-color: lightgoldenrodyellow;
+        font-weight: bold;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    img:hover {
+        transform: none;
+        box-shadow: 0 0 10px lightgoldenrodyellow;
     }
 }
